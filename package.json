@@ -1,0 +1,8 @@
+{
+  "name": "ai-laws-advocacy-site",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "preview": "node server.js"
+  }
+}
