@@ -15,11 +15,3 @@ const revealObserver = new IntersectionObserver(
 );
 
 revealTargets.forEach((target) => revealObserver.observe(target));
-
-const campaignButton = document.getElementById("campaign-button");
-const campaignMessage = document.getElementById("campaign-message");
-
-campaignButton?.addEventListener("click", () => {
-  campaignMessage.textContent =
-    "Thanks for showing up. Next step: publish this site on GitHub Pages and connect it to a petition, mailing list, or advocacy toolkit.";
-});

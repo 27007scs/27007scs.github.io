@@ -282,6 +282,59 @@ h2 {
   gap: 1rem;
 }
 
+.law-card {
+  padding: 1.5rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  background: rgba(255, 255, 255, 0.58);
+}
+
+.law-card + .law-card {
+  margin-top: 1rem;
+}
+
+.law-label {
+  margin: 0 0 0.45rem;
+  color: var(--accent-deep);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+.law-card h3 {
+  font-family: "Fraunces", serif;
+  font-size: clamp(1.8rem, 3vw, 2.7rem);
+  margin-bottom: 1.2rem;
+}
+
+.law-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.law-item {
+  padding: 1.2rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  background: rgba(255, 250, 242, 0.8);
+}
+
+.law-item h4 {
+  margin: 0 0 0.6rem;
+  font-size: 1rem;
+}
+
+.law-item p {
+  margin: 0;
+}
+
+.law-item-wide {
+  grid-column: 1 / -1;
+  background: rgba(240, 178, 115, 0.15);
+}
+
 .info-card,
 .action-card,
 .timeline-item,
@@ -422,6 +475,7 @@ h2 {
   .campaign-form,
   .card-grid,
   .action-grid,
+  .law-grid,
   .stats-band {
     grid-template-columns: 1fr;
   }
