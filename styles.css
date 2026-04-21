@@ -27,7 +27,7 @@ html {
 body {
   margin: 0;
   min-height: 100vh;
-  font-family: "Space Grotesk", sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   color: var(--text);
   background:
     radial-gradient(circle at top left, rgba(240, 178, 115, 0.45), transparent 28%),
@@ -147,7 +147,7 @@ h3 {
 
 h1,
 h2 {
-  font-family: "Fraunces", serif;
+  font-family: Georgia, "Times New Roman", serif;
   line-height: 1;
 }
 
@@ -263,19 +263,10 @@ h2 {
   margin-top: 1rem;
 }
 
-.law-label {
-  margin: 0 0 0.45rem;
-  color: var(--accent-deep);
-  text-transform: uppercase;
-  letter-spacing: 0.12em;
-  font-size: 0.78rem;
-  font-weight: 700;
-}
-
 .law-card h3 {
-  font-family: "Fraunces", serif;
+  font-family: Georgia, "Times New Roman", serif;
   font-size: clamp(1.8rem, 3vw, 2.7rem);
-  margin-bottom: 1.2rem;
+  margin-bottom: 1rem;
 }
 
 .law-grid {
@@ -377,7 +368,7 @@ h2 {
 
 .quote-block p {
   margin: 0;
-  font-family: "Fraunces", serif;
+  font-family: Georgia, "Times New Roman", serif;
   font-size: clamp(1.8rem, 4vw, 3rem);
   line-height: 1.1;
 }
