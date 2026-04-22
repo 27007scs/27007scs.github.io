@@ -22,6 +22,7 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-snap-type: y proximity;
 }
 
 body {
@@ -96,6 +97,7 @@ body::before {
   opacity: 0;
   transform: translateY(24px);
   transition: opacity 700ms ease, transform 700ms ease;
+  scroll-snap-align: start;
 }
 
 .hero.is-visible,
@@ -107,7 +109,9 @@ body::before {
 
 .hero {
   display: block;
+  min-height: 100vh;
   padding: 4rem 0 2rem;
+  align-content: center;
 }
 
 .hero-copy,
@@ -222,6 +226,8 @@ h2 {
   border-radius: var(--radius-lg);
   padding: 1.35rem 1.5rem;
   margin: 1rem 0 2rem;
+  min-height: 100vh;
+  align-content: center;
 }
 
 .stats-band article {
@@ -243,6 +249,9 @@ h2 {
   margin-top: 1.5rem;
   border-radius: var(--radius-lg);
   padding: 2rem;
+  min-height: 100vh;
+  display: grid;
+  align-content: center;
 }
 
 .section-heading {
@@ -457,6 +466,7 @@ h2 {
 
   .hero {
     padding-top: 2rem;
+    min-height: auto;
   }
 
   .site-header {
@@ -466,6 +476,11 @@ h2 {
 
   h1 {
     max-width: 13ch;
+  }
+
+  .stats-band,
+  .section {
+    min-height: auto;
   }
 }
 
