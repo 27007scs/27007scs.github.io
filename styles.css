@@ -1,15 +1,15 @@
 :root {
-  --bg: #f6f7f9;
-  --surface: #ffffff;
-  --text: #1f2933;
-  --muted: #52606d;
-  --line: #d9e2ec;
-  --accent: #1d4ed8;
-  --accent-deep: #163ea8;
-  --forest: #102a43;
-  --shadow: 0 8px 24px rgba(15, 23, 42, 0.06);
-  --radius-lg: 16px;
-  --radius-md: 12px;
+  --bg: #f5f1ea;
+  --surface: #fffdf9;
+  --text: #22201c;
+  --muted: #5f5a52;
+  --line: #ded6ca;
+  --accent: #a74a2a;
+  --accent-deep: #7f361e;
+  --forest: #2f3e37;
+  --shadow: 0 10px 28px rgba(58, 40, 24, 0.07);
+  --radius-lg: 18px;
+  --radius-md: 14px;
   --radius-sm: 10px;
   --max-width: 1100px;
 }
@@ -28,7 +28,8 @@ body {
   min-height: 100vh;
   font-family: Arial, Helvetica, sans-serif;
   color: var(--text);
-  background: var(--bg);
+  background:
+    linear-gradient(180deg, #f8f4ee 0%, var(--bg) 100%);
 }
 
 .page-shell {
@@ -46,7 +47,7 @@ body {
   justify-content: space-between;
   gap: 1rem;
   padding: 1.1rem 0;
-  background: rgba(246, 247, 249, 0.94);
+  background: rgba(245, 241, 234, 0.95);
   border-bottom: 1px solid var(--line);
 }
 
@@ -161,7 +162,7 @@ h2 {
 .faq-list p,
 .manifesto-copy p {
   color: var(--muted);
-  line-height: 1.7;
+  line-height: 1.75;
   font-size: 1rem;
 }
 
@@ -189,6 +190,11 @@ h2 {
   font: inherit;
   font-weight: 700;
   cursor: pointer;
+  transition: transform 160ms ease, background-color 160ms ease;
+}
+
+.button:hover {
+  transform: translateY(-1px);
 }
 
 .button-primary {
@@ -197,7 +203,7 @@ h2 {
 }
 
 .button-secondary {
-  background: #eaf2ff;
+  background: #f1e5dc;
   color: var(--accent-deep);
 }
 
@@ -215,12 +221,13 @@ h2 {
 .stats-band article {
   display: grid;
   gap: 0.2rem;
+  text-align: center;
 }
 
 .stat-number {
-  font-family: "Fraunces", serif;
+  font-family: Georgia, "Times New Roman", serif;
   font-size: clamp(2rem, 4vw, 3rem);
-  color: var(--forest);
+  color: var(--accent-deep);
 }
 
 .stat-label {
@@ -284,7 +291,7 @@ h2 {
   padding: 1.2rem;
   border: 1px solid var(--line);
   border-radius: var(--radius-md);
-  background: #f8fafc;
+  background: #fcf8f2;
 }
 
 .law-item h4 {
@@ -298,7 +305,7 @@ h2 {
 
 .law-item-wide {
   grid-column: 1 / -1;
-  background: #eef4ff;
+  background: #f5e9de;
 }
 
 .info-card,
@@ -307,7 +314,7 @@ h2 {
 .faq-list details {
   border: 1px solid var(--line);
   border-radius: var(--radius-md);
-  background: #ffffff;
+  background: #fffdfa;
 }
 
 .info-card,
@@ -426,6 +433,13 @@ h2 {
 .faq-list summary {
   cursor: pointer;
   font-weight: 700;
+}
+
+.hero-copy,
+.section,
+.stats-band,
+.law-card {
+  overflow: hidden;
 }
 
 .faq-list p {
