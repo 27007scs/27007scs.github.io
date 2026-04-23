@@ -118,6 +118,8 @@ body {
   margin: 0;
   text-align: left;
   position: relative;
+  background:
+    linear-gradient(180deg, rgba(255, 253, 248, 0.98), rgba(248, 243, 235, 0.95));
 }
 
 .hero-copy::before {
@@ -129,6 +131,14 @@ body {
   width: 6px;
   border-radius: 999px;
   background: linear-gradient(180deg, var(--accent), rgba(155, 61, 34, 0.15));
+}
+
+.hero-kicker {
+  margin: 0 0 1rem;
+  color: var(--accent-deep);
+  font-size: 0.92rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
 }
 
 .eyebrow {
@@ -234,7 +244,7 @@ h2 {
   min-height: auto;
   align-content: start;
   background: var(--surface-alt);
-  box-shadow: none;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.6);
 }
 
 .stats-band article {
@@ -242,6 +252,8 @@ h2 {
   gap: 0.45rem;
   text-align: left;
   padding: 0.4rem 0.2rem;
+  border-left: 3px solid rgba(155, 61, 34, 0.18);
+  padding-left: 1rem;
 }
 
 .stat-number {
@@ -320,6 +332,7 @@ h2 {
   margin-bottom: 1.35rem;
   max-width: none;
   width: 100%;
+  color: var(--forest);
 }
 
 .law-grid {
@@ -369,6 +382,7 @@ h2 {
 .info-card,
 .action-card {
   padding: 1.35rem;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.75);
 }
 
 .action-card:hover,
@@ -383,6 +397,15 @@ h2 {
   margin-bottom: 0.6rem;
   font-size: 1.15rem;
   color: var(--forest);
+}
+
+.card-kicker {
+  margin: 0 0 0.7rem;
+  color: var(--accent-deep);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
 }
 
 .split-section {
@@ -484,6 +507,7 @@ h2 {
 
 .faq-list details {
   padding: 1rem 1.2rem;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.65);
 }
 
 .faq-list summary {
@@ -565,5 +589,9 @@ h2 {
   .stats-band {
     grid-template-columns: 1fr;
     padding: 1rem;
+  }
+
+  .stats-band article {
+    padding-left: 0.85rem;
   }
 }
