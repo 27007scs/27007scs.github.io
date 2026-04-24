@@ -140,7 +140,9 @@ body {
 }
 
 .hero-figure img,
-.section-figure-card img {
+.section-figure-card img,
+.hero-figure svg,
+.section-figure-card svg {
   display: block;
   width: 100%;
   height: auto;
